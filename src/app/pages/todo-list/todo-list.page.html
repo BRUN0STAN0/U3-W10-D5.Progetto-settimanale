@@ -1,0 +1,4 @@
+<ul *ngFor="let td of todo">
+  <li (click)="taskDone(td.id)">{{ td.id }} {{ td.title }} <span *ngIf="td.completed">V</span></li>
+</ul>
+<input [(ngModel)]="title" type="text" required /> <button (click)="addTask(title)">+</button>

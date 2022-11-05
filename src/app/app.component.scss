@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 30px;
+  a {
+    text-decoration: none;
+    color: red;
+    margin: 20px;
+  }
+}
