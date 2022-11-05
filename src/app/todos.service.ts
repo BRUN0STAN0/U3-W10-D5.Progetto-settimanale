@@ -20,10 +20,12 @@ export class TodosService {
 
   id = 0;
   completed = false;
-
+  doneIsEmpty = true;
+  todoIsEmpty = true;
   constructor() {}
 
   addTask(title: string | undefined) {
+    this.todoIsEmpty = false;
     this.id++;
     let id = this.id;
     let completed = this.completed;
@@ -32,6 +34,7 @@ export class TodosService {
   }
 
   taskDone(id: any) {
+    this.doneIsEmpty = false;
     this.todo[id - 1].completed = true;
     console.log(this.todo);
   }

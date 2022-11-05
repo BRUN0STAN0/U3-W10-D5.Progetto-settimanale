@@ -11,8 +11,11 @@ export class TodoListPage implements OnInit {
   title?: string;
   id = 0;
 
+  todoIsEmpty: boolean;
+
   constructor(private todosService: TodosService) {
     this.todo = this.todosService.todo;
+    this.todoIsEmpty = this.todosService.todoIsEmpty;
   }
 
   ngOnInit(): void {}

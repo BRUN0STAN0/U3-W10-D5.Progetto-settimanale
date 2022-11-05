@@ -8,8 +8,11 @@ import { TodosService } from 'src/app/todos.service';
 })
 export class DoneListPage implements OnInit {
   todo: Todo[] = [];
+  doneIsEmpty: boolean;
+
   constructor(private todosService: TodosService) {
     this.todo = this.todosService.todo;
+    this.doneIsEmpty = this.todosService.doneIsEmpty;
   }
 
   ngOnInit(): void {}
