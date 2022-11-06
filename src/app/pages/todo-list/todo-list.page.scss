@@ -1,14 +1,31 @@
 * {
   font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+.container {
+  background: linear-gradient(white, transparent);
+  padding: 40px;
+  border-radius: 10px;
+  height: 50vh;
+}
+
 ul {
   margin: 0px;
+  margin-block: 20px;
   padding: 0px;
   li {
     list-style: none;
     cursor: pointer;
+    background-color: white;
     border: 1px solid gray;
+    margin-block: 3px;
+    border-radius: 5px;
   }
+}
+
+.todo-is-empty {
+  background-color: red;
 }
 span {
   background-color: greenyellow;
@@ -21,9 +38,11 @@ span {
 }
 
 input {
-  border: 2px solid green;
+  border: 2px solid gray;
+  border-radius: 5px;
 }
 
 button {
-  background-color: green;
+  background-color: greenyellow;
+  border-radius: 5px;
 }
