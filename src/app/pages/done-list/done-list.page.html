@@ -1,4 +1,6 @@
-<li *ngIf="doneIsEmpty">Ops! Non ci sono task completati</li>
-<ul *ngFor="let td of todo">
-  <li *ngIf="td.completed">- {{td.title}}</li>
-</ul>
+<div class="container">
+  <li class="done-is-empty" *ngIf="doneIsEmpty">Ops! Non ci sono task completati</li>
+  <ul *ngFor="let td of todo">
+    <li *ngIf="td.completed">- {{td.title}}</li>
+  </ul>
+</div>

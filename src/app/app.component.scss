@@ -4,14 +4,26 @@
   justify-content: center;
   align-items: center;
   height: 80vh;
+  background: linear-gradient(rgb(139, 209, 176), white);
 }
 
 .navbar {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position: fixed;
   top: 30px;
+  font-size: 30px;
   a {
+    background-color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+    padding: 10px;
     text-decoration: none;
-    color: red;
     margin: 20px;
+  }
+  .todos-page {
+    color: greenyellow;
+  }
+  .dones-page {
+    color: red;
   }
 }

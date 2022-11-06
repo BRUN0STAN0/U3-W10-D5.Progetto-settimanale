@@ -22,6 +22,7 @@ export class TodoListPage implements OnInit {
 
   addTask(str: string | undefined) {
     this.todosService.addTask(str);
+    this.todoIsEmpty = false;
   }
 
   taskDone(id: any) {
